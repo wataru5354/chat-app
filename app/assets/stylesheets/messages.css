@@ -103,10 +103,13 @@
   margin-left: 10px;
 }
 
+.lower-comment{
+  margin-top: 10px;
+}
+
 .comment{
   color:#434A54;
   font-size: 14px;
-  margin-top: 10px;
 }
 
 .form{
