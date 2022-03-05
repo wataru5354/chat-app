@@ -7,7 +7,10 @@
       <%=  l message.created_at%>
     </div>
     </div>
-    <div class="comment">
-      <%= message.content%>
+    <div class="lower-comment">
+      <div class="comment">
+        <%= message.content%>
+      </div>
+      <%= image_tag message.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
     </div>
 </div>
