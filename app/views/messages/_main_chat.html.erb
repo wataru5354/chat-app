@@ -9,26 +9,7 @@
 </div>
 
 <div class="messages">
-  <div class="comment-box">
-    <div class="upper-comment">
-      <div class="comment-name">Tom
-      </div>
-      <div class="comment-time">2020/3/31(wed) 12:43:30
-      </div>
-    </div>
-    <div class="comment">おはよう
-    </div>
-  </div>
-  <div class="comment-box">
-    <div class="upper-comment">
-      <div class="comment-name">Sim
-      </div>
-      <div class="comment-time">2020/3/31(wed) 12:43:30
-      </div>
-    </div>
-    <div class="comment">こんにちは
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages%>
 </div>
 
 <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
